@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fazer_inscricao.css">
+    <title>Realizar Inscricao</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="home.html">Palestra Sobre Psicologia</a>
+            <div class="navbar-links">
+                <a class="nav-link" href="home.html">Inicio</a>
+                <a class="nav-link" href="cadastrar_evento.html">Doe Agora</a>
+                <a class="nav-link" href="fazer_inscricao.html">Inscricoes</a>
+                <a class="nav-link" href="Sobre.html">Sobre a pagina</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card-header">
+            <h1>Realizar Inscricão</h1>
+        </div>
+
+        <form action="#" method="post" name="formulario_inscricao" id="formulario_inscricao">
+            <div class="form-group">
+                <label for="cpf" class="form-label">CPF</label>
+                <input placeholder="123.456.789-10" type="text" class="form-control" name="cpf" id="cpf">
+            </div>
+
+            <div class="form-group">
+                <label for="nome" class="form-label">Nome</label>
+                <input placeholder="Seu Nome" type="text" class="form-control" name="nome" id="nome">
+            </div>
+
+            <div class="form-group">
+                <label for="select_evento" class="form-label">Selecione o evento</label>
+                <select class="form-control" name="select_evento" id="select_evento" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="1">Palestra</option>
+                    <option value="2">Café com Eduarda</option>
+                </select>
+            </div>
+            <div class="actions">
+                <button type="submit" class="btn btn-success" id="btn_envia_formulario_inscricao">Fazer Inscricao</button>
+                <button type="button" class="btn btn-danger" id="btn_cancelar">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

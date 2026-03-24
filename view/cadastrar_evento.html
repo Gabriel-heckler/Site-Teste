@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cadastrar_eventos.css">
+    <title>Doe Agora</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="home.html">Palestra Sobre Psicologia</a>
+            <div class="navbar-links">
+                <a class="nav-link" href="home.html">Inicio</a>
+                <a class="nav-link" href="cadastrar_evento.html">Doe Agora</a>
+                <a class="nav-link" href="fazer_inscricao.html">Inscricoes</a>
+                <a class="nav-link" href="Sobre.html">Sobre a pagina</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="card-header">
+            <h1>Doação</h1>
+        </div>
+
+        <form action="#" method="post" name="formulario_evento" id="formulario_evento">
+            <div class="form-group">
+                <label for="nome" class="form-label">Nome do Doador</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                 <label for="select_evento" class="form-label">Instituição</label>
+                 <select class="form-control" name="select_evento" id="select_evento" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="1">Yacamin</option>
+                <option value="2">Apae</option>
+                <option value="3">Todas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="valor" class="form-label">Doação (Valor)</label>
+                <input type="number" class="form-control" min="0" step="0.01" name="valor" id="valor" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao" class="form-label">Observação</label>
+                <textarea class="form-control" name="descricao" id="descricao" rows="4" required></textarea>
+            </div>
+            <div class="actions">
+                <button type="submit" class="btn btn-success" id="btn_envia_formulario_evento">Cadastrar</button>
+                <button type="button" class="btn btn-danger" id="btn_cancelar">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
